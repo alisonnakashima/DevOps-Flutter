@@ -9,7 +9,11 @@ The main intention here is to learn how to create and configure a CI/CD pipeline
 _________________________________________________________________
 
 The tool selected was Github Actions. So, on consequence, there are some configurations
-on the file CI-CD.yaml on the path .github/workflows .
+on the file CI-CD.yaml on the path .github/workflows.
+
+There is a test file on the project that generates an error on the workflow. This is
+task_failure_test.dart, on line 16 and 17 you can comment one of them to make the 
+CI/CD works good or identify an error.
 _________________________________________________________________
 
 A few resources to get you started if this is your first Flutter project:
