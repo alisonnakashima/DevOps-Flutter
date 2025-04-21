@@ -14,5 +14,6 @@ void main() {
 
     // Espera que a tarefa esteja marcada como concluída, mas ela não está
     expect(task.isDone, isTrue); // FALHA
+    // expect(task.isDone, isFalse; // Funciona
   });
 }
