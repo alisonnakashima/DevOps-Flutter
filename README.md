@@ -4,10 +4,15 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is a starting point for a study case to CI/CD with a Flutter application. 
+The main intention here is to learn how to create and configure a CI/CD pipeline.
+_________________________________________________________________
+
+The tool selected was Github Actions. So, on consequence, there are some configurations
+on the file CI-CD.yaml on the path .github/workflows .
+_________________________________________________________________
 
 A few resources to get you started if this is your first Flutter project:
-
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
