@@ -40,7 +40,7 @@ jobs:
         run: flutter test
 
       - name: 🔍 Verificar formatação
-        run: flutter format --set-exit-if-changed .
+        run: dart format --set-exit-if-changed .
 
       - name: 🧼 Analisar código
         run: flutter analyze
