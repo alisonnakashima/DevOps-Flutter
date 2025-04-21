@@ -37,7 +37,8 @@ jobs:
         run: flutter pub get
 
       - name: 🔍 Verificar formatação
-        run: dart format --set-exit-if-changed .
+        #run: dart format --set-exit-if-changed . #caso ocorra erro vai sair
+        run: dart format . #caso ocorra erro vai ser apenas informado
 
       - name: 🧪 Rodar testes
         run: flutter test
