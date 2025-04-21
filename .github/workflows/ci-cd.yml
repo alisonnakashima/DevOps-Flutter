@@ -36,11 +36,11 @@ jobs:
       - name: 📦 Instalar dependências
         run: flutter pub get
 
-      - name: 🧪 Rodar testes
-        run: flutter test
-
       - name: 🔍 Verificar formatação
         run: dart format --set-exit-if-changed .
+
+      - name: 🧪 Rodar testes
+        run: flutter test
 
       - name: 🧼 Analisar código
         run: flutter analyze
