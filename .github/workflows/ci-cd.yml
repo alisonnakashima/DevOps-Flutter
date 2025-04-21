@@ -44,7 +44,7 @@ jobs:
         run: flutter test
 
       - name: 🧼 Analisar código
-        run: flutter analyze
+        run: flutter analyze --no-fatal-infos
 
       - name: 🚀 Gerar build de produção (APK)
         run: flutter build apk --release

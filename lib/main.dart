@@ -9,6 +9,8 @@ class Task {
 }
 
 class TaskApp extends StatelessWidget {
+  const TaskApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -57,7 +59,7 @@ class _TaskListScreenState extends State<TaskListScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Lista de Tarefas')),
+      appBar: AppBar(title: const Text('Lista de Tarefas')),
       body: Column(
         children: [
           Padding(
@@ -69,7 +71,7 @@ class _TaskListScreenState extends State<TaskListScreen> {
                   Expanded(
                     child: TextFormField(
                       controller: _controller,
-                      decoration: InputDecoration(
+                      decoration: const InputDecoration(
                         labelText: 'Nova tarefa',
                         border: OutlineInputBorder(),
                       ),
@@ -84,14 +86,14 @@ class _TaskListScreenState extends State<TaskListScreen> {
                       },
                     ),
                   ),
-                  SizedBox(width: 8),
+                  const SizedBox(width: 8),
                   ElevatedButton(
                     onPressed: () {
                       if (_formKey.currentState!.validate()) {
                         _addTask(_controller.text);
                       }
                     },
-                    child: Text('Adicionar'),
+                    child: const Text('Adicionar'),
                   ),
                 ],
               ),
@@ -116,7 +118,7 @@ class _TaskListScreenState extends State<TaskListScreen> {
                     ),
                   ),
                   trailing: IconButton(
-                    icon: Icon(Icons.delete, color: Colors.red),
+                    icon: const Icon(Icons.delete, color: Colors.red),
                     onPressed: () => _deleteTask(task),
                   ),
                 );
